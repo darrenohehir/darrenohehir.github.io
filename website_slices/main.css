@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+	width: 1020px;
+	height: 700px;
+	background-color: #170801;
+	background-repeat: repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: relative;
+	margin: 0 auto;
+
+}
+main {
+	width: 940px;
+	height: 880px;
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #A0A0A0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url(background2.png);
+	background-repeat: repeat;
+}
+.Buttons {
+	width: 780px;
+	height: 450px;
+	padding-left: 0px;
+	margin-left: 150px;
+}
+.playlist {
+	width: 125px;
+	height: 0px;
+}
+
+
+#wrapper {
+    background-color: #170801;
+    margin: 0 auto;
+    width: 1020px;
+}
+div {
+    cursor:pointer;
+}
+.valenza {
+	background-color:#303030;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	border:2px solid #303030;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.valenza:hover {
+	background-color:#4a0217;
+	border:2px solid #4a0217;
+}
+.valenza:active {
+	position:relative;
+	top:1px;
+}
+
+.details {
+	padding-top: 190px;
+}
+.title1:hover {
+	color: #FF3336;
+}
+.title2:hover {
+	color: #FF8E00;
+}
+.title3:hover {
+	color: #DFCF45;
+}
+.title4:hover {
+	color: #9BDD57;
+}
+.title5:hover {
+	color: #37CC3E;
+}
+.title6:hover {
+	color: #49CD7D;
+}
+.title7:hover {
+	color: #4ECDB8;
+}
+.title8:hover {
+	color: #5EA6D4;
+}
+.title9:hover {
+	color: #4155CB;
+}
+.title10:hover {
+	color: #6929B0;
+}
+.title11:hover {
+	color: #AD2B94;
+}
+.title12:hover {
+	color: #A71E55;
+}

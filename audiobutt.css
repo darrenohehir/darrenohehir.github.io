@@ -1,0 +1,262 @@
+@charset "utf-8";
+.earlyplay {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:13px;
+	padding:5px 6px;
+	text-decoration:none;
+}
+.earlyplay:hover	{
+	background-color:#ff1433;
+	border:2px solid #ff1433;
+}
+.earlyplay:active {
+	position:relative;
+	top:1px;
+}
+.earlypause {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:2px 4px;
+	text-decoration:none;
+}
+.earlypause:hover {
+	background-color:#a914ff;
+	border:2px solid #a914ff;
+}
+.earlypause:active {
+	position:relative;
+	top:1px;
+}
+.earlyup {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 8px;
+	text-decoration:none;
+}
+.earlyup:hover {
+	background-color:#0dffef;
+	border:2px solid #0dffef;
+}
+.earlyup:active {
+	position:relative;
+	top:1px;
+}.earlydown {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.earlydown:hover {
+	background-color:#ffa70f;
+	border:2px solid #ffa70f;
+}
+.earlydown:active {
+	position:relative;
+	top:1px;
+}
+.aliceplay {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:13px;
+	padding:5px 6px;
+	text-decoration:none;
+}
+.aliceplay:hover	{
+	background-color:#0fff6f;
+	border:2px solid #0fff6f;
+}
+.aliceplay:active {
+	position:relative;
+	top:1px;
+}
+.alicepause {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:2px 4px;
+	text-decoration:none;
+}
+.alicepause:hover {
+	background-color:#0fcfff;
+	border:2px solid #0fcfff;
+}
+.alicepause:active {
+	position:relative;
+	top:1px;
+}
+.aliceup {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 8px;
+	text-decoration:none;
+}
+.aliceup:hover {
+	background-color:#bb0fff;
+	border:2px solid #bb0fff;
+}
+.aliceup:active {
+	position:relative;
+	top:1px;
+}.alicedown {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.alicedown:hover {
+	background-color:#9fff0f;
+	border:2px solid #9fff0f;
+}
+.alicedown:active {
+	position:relative;
+	top:1px;
+}
+.porgyplay {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:13px;
+	padding:5px 6px;
+	text-decoration:none;
+}
+.porgyplay:hover	{
+	background-color:#4200bd;
+	border:2px solid #4200bd;
+}
+.porgyplay:active {
+	position:relative;
+	top:1px;
+}
+.porgypause {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:2px 4px;
+	text-decoration:none;
+}
+.porgypause:hover {
+	background-color:#2fd426;
+	border:2px solid #2fd426;
+}
+.porgypause:active {
+	position:relative;
+	top:1px;
+}
+.porgyup {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 8px;
+	text-decoration:none;
+}
+.porgyup:hover {
+	background-color:#ff2ebd;
+	border:2px solid #ff2ebd;
+}
+.porgyup:active {
+	position:relative;
+	top:1px;
+}.porgydown {
+	background-color:#292929;
+	-moz-border-radius:26px;
+	-webkit-border-radius:26px;
+	border-radius:26px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:12px;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.porgydown:hover {
+	background-color:#00d9ff;
+	border:2px solid #00d9ff;
+}
+.porgydown:active {
+	position:relative;
+	top:1px;
+}

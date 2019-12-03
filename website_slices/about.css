@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+	width: 1020px;
+	height: 1020px;
+	background-color: #170801;
+	background-repeat: repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: relative;
+	margin: 0 auto;
+}
+body {
+}
+
+main {
+	width: 940px;
+	height: 940px;
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #A0A0A0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url(background2.png);
+	background-repeat: repeat;
+}
+.Buttons {
+	width: 660px;
+	height: 500px;
+	padding-left: 0px;
+	margin-left: 180px;
+	margin-top: -470px;
+}
+.playlist {
+	width: 160px;
+	height: 0px;
+}
+
+
+#wrapper {
+    background-color: #170801;
+    margin: 0 auto;
+    width: 1020px;
+}
+div {
+    cursor:pointer;
+}
+.goback {
+	background-color:#303030;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	border:2px solid #303030;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.goback:hover {
+	background-color:#5c0047;
+	border:2px solid #5c0047
+}
+.goback:active {
+	position:relative;
+	top:1px;
+}
+.stopmusic {
+	background-color:#303030;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	border:2px solid #303030;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.stopmusic {
+	background-color:#292929;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	border:2px solid #292929;
+	display:inline-block;
+	cursor:pointer;
+	color:#f0f0f0;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:4px 9px;
+	text-decoration:none;
+}
+.stopmusic:hover {
+	background-color:#630063;
+	border:2px solid #630063;
+}
+.stopmusic:active {
+	position:relative;
+	top:1px;
+}
+.title1:hover {
+	color: #FF3336;
+}
+.title2:hover {
+	color: #FF8E00;
+}
+.title3:hover {
+	color: #DFCF45;
+}
+.title4:hover {
+	color: #9BDD57;
+}
+.title5:hover {
+	color: #37CC3E;
+}
+.title6:hover {
+	color: #49CD7D;
+}
+.title7:hover {
+	color: #4ECDB8;
+}
+.title8:hover {
+	color: #5EA6D4;
+}
+.title9:hover {
+	color: #4155CB;
+}
+.title10:hover {
+	color: #6929B0;
+}
+.title11:hover {
+	color: #AD2B94;
+}
+.title12:hover {
+	color: #A71E55;
+}
+

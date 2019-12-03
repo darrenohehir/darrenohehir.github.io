@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="website_slices/favicon.ico" type="image/x-icon" />
+
+
+
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("2.ogg", "1.mp3")
+
+var clicksound1=createsoundbite("sounds/notes/1.wav", "sounds/notes/1.mp3")
+var clicksound2=createsoundbite("sounds/notes/2.wav", "sounds/notes/2.mp3")
+var clicksound3=createsoundbite("sounds/notes/3.wav", "sounds/notes/3.mp3")
+var clicksound4=createsoundbite("sounds/notes/4.wav", "sounds/notes/4.mp3")
+var clicksound5=createsoundbite("sounds/notes/5.wav", "sounds/notes/5.mp3")
+var clicksound6=createsoundbite("sounds/notes/6.wav", "sounds/notes/6.mp3")
+var clicksound7=createsoundbite("sounds/notes/7.wav", "sounds/notes/7.mp3")
+var clicksound8=createsoundbite("sounds/notes/8.wav", "sounds/notes/8.mp3")
+var clicksound9=createsoundbite("sounds/notes/9.wav", "sounds/notes/9.mp3")
+var clicksound10=createsoundbite("sounds/notes/10.wav", "sounds/notes/10.mp3")
+var clicksound11=createsoundbite("sounds/notes/11.wav", "sounds/notes/11.mp3")
+var clicksound12=createsoundbite("sounds/notes/12.wav", "sounds/notes/12.mp3")
+
+var clicksound13=createsoundbite("sounds/notes/13.wav", "sounds/notes/13.mp3")
+var clicksound14=createsoundbite("sounds/notes/14.wav", "sounds/notes/14.mp3")
+var clicksound15=createsoundbite("sounds/notes/15.wav", "sounds/notes/15.mp3")
+var clicksound16=createsoundbite("sounds/notes/16.wav", "sounds/notes/16.mp3")
+var clicksound17=createsoundbite("sounds/notes/17.wav", "sounds/notes/17.mp3")
+var clicksound18=createsoundbite("sounds/notes/18.wav", "sounds/notes/18.mp3")
+var clicksound19=createsoundbite("sounds/notes/19.wav", "sounds/notes/19.mp3")
+var clicksound20=createsoundbite("sounds/notes/20.wav", "sounds/notes/20.mp3")
+var clicksound21=createsoundbite("sounds/notes/21.wav", "sounds/notes/21.mp3")
+var clicksound22=createsoundbite("sounds/notes/22.wav", "sounds/notes/22.mp3")
+var clicksound23=createsoundbite("sounds/notes/23.wav", "sounds/notes/23.mp3")
+var clicksound24=createsoundbite("sounds/notes/24.wav", "sounds/notes/24.mp3")
+
+var clicksound25=createsoundbite("sounds/notes/25.wav", "sounds/notes/25.mp3")
+var clicksound26=createsoundbite("sounds/notes/26.wav", "sounds/notes/26.mp3")
+var clicksound27=createsoundbite("sounds/notes/27.wav", "sounds/notes/27.mp3")
+var clicksound28=createsoundbite("sounds/notes/28.wav", "sounds/notes/28.mp3")
+var clicksound29=createsoundbite("sounds/notes/29.wav", "sounds/notes/29.mp3")
+var clicksound30=createsoundbite("sounds/notes/30.wav", "sounds/notes/30.mp3")
+var clicksound31=createsoundbite("sounds/notes/31.wav", "sounds/notes/31.mp3")
+var clicksound32=createsoundbite("sounds/notes/32.wav", "sounds/notes/32.mp3")
+var clicksound33=createsoundbite("sounds/notes/33.wav", "sounds/notes/33.mp3")
+var clicksound34=createsoundbite("sounds/notes/34.wav", "sounds/notes/34.mp3")
+var clicksound35=createsoundbite("sounds/notes/35.wav", "sounds/notes/35.mp3")
+var clicksound36=createsoundbite("sounds/notes/36.wav", "sounds/notes/36.mp3")
+
+var clicksound37=createsoundbite("sounds/notes/37.wav", "sounds/notes/37.mp3")
+var clicksound38=createsoundbite("sounds/notes/38.wav", "sounds/notes/38.mp3")
+var clicksound39=createsoundbite("sounds/notes/39.wav", "sounds/notes/39.mp3")
+var clicksound40=createsoundbite("sounds/notes/40.wav", "sounds/notes/40.mp3")
+var clicksound41=createsoundbite("sounds/notes/41.wav", "sounds/notes/41.mp3")
+var clicksound42=createsoundbite("sounds/notes/42.wav", "sounds/notes/42.mp3")
+var clicksound43=createsoundbite("sounds/notes/43.wav", "sounds/notes/43.mp3")
+var clicksound44=createsoundbite("sounds/notes/44.wav", "sounds/notes/44.mp3")
+var clicksound45=createsoundbite("sounds/notes/45.wav", "sounds/notes/45.mp3")
+var clicksound46=createsoundbite("sounds/notes/46.wav", "sounds/notes/46.mp3")
+var clicksound47=createsoundbite("sounds/notes/47.wav", "sounds/notes/47.mp3")
+var clicksound48=createsoundbite("sounds/notes/48.wav", "sounds/notes/48.mp3")
+
+var clicksound49=createsoundbite("sounds/notes/49.wav", "sounds/notes/49.mp3")
+var clicksound50=createsoundbite("sounds/notes/50.wav", "sounds/notes/50.mp3")
+var clicksound51=createsoundbite("sounds/notes/51.wav", "sounds/notes/51.mp3")
+var clicksound52=createsoundbite("sounds/notes/52.wav", "sounds/notes/52.mp3")
+var clicksound53=createsoundbite("sounds/notes/53.wav", "sounds/notes/53.mp3")
+var clicksound54=createsoundbite("sounds/notes/54.wav", "sounds/notes/54.mp3")
+var clicksound55=createsoundbite("sounds/notes/55.wav", "sounds/notes/55.mp3")
+var clicksound56=createsoundbite("sounds/notes/56.wav", "sounds/notes/56.mp3")
+var clicksound57=createsoundbite("sounds/notes/57.wav", "sounds/notes/57.mp3")
+var clicksound58=createsoundbite("sounds/notes/58.wav", "sounds/notes/58.mp3")
+var clicksound59=createsoundbite("sounds/notes/59.wav", "sounds/notes/59.mp3")
+var clicksound60=createsoundbite("sounds/notes/60.wav", "sounds/notes/60.mp3")
+
+var clicksound61=createsoundbite("sounds/notes/61.wav", "sounds/notes/61.mp3")
+var clicksound62=createsoundbite("sounds/notes/62.wav", "sounds/notes/62.mp3")
+var clicksound63=createsoundbite("sounds/notes/63.wav", "sounds/notes/63.mp3")
+var clicksound64=createsoundbite("sounds/notes/64.wav", "sounds/notes/64.mp3")
+var clicksound65=createsoundbite("sounds/notes/65.wav", "sounds/notes/65.mp3")
+var clicksound66=createsoundbite("sounds/notes/66.wav", "sounds/notes/66.mp3")
+var clicksound67=createsoundbite("sounds/notes/67.wav", "sounds/notes/67.mp3")
+var clicksound68=createsoundbite("sounds/notes/68.wav", "sounds/notes/68.mp3")
+var clicksound69=createsoundbite("sounds/notes/69.wav", "sounds/notes/69.mp3")
+var clicksound70=createsoundbite("sounds/notes/70.wav", "sounds/notes/70.mp3")
+var clicksound71=createsoundbite("sounds/notes/71.wav", "sounds/notes/71.mp3")
+var clicksound72=createsoundbite("sounds/notes/72.wav", "sounds/notes/72.mp3")
+
+var clicksound73=createsoundbite("sounds/notes/73.wav", "sounds/notes/73.mp3")
+var clicksound74=createsoundbite("sounds/notes/74.wav", "sounds/notes/74.mp3")
+var clicksound75=createsoundbite("sounds/notes/75.wav", "sounds/notes/75.mp3")
+var clicksound76=createsoundbite("sounds/notes/76.wav", "sounds/notes/76.mp3")
+var clicksound77=createsoundbite("sounds/notes/77.wav", "sounds/notes/77.mp3")
+var clicksound78=createsoundbite("sounds/notes/78.wav", "sounds/notes/78.mp3")
+var clicksound79=createsoundbite("sounds/notes/79.wav", "sounds/notes/79.mp3")
+var clicksound80=createsoundbite("sounds/notes/80.wav", "sounds/notes/80.mp3")
+var clicksound81=createsoundbite("sounds/notes/81.wav", "sounds/notes/81.mp3")
+var clicksound82=createsoundbite("sounds/notes/82.wav", "sounds/notes/82.mp3")
+var clicksound83=createsoundbite("sounds/notes/83.wav", "sounds/notes/83.mp3")
+var clicksound84=createsoundbite("sounds/notes/84.wav", "sounds/notes/84.mp3")
+
+var clicksound85=createsoundbite("sounds/pianosfx.mp3")
+
+var clicksound86=createsoundbite("sounds/1fm9.mp3")
+var clicksound87=createsoundbite("sounds/2Bb13.mp3")
+var clicksound88=createsoundbite("sounds/3Ebm9.mp3")
+var clicksound89=createsoundbite("sounds/4Abdim.mp3")
+var clicksound90=createsoundbite("sounds/5DbMaj9.mp3")
+var clicksound91=createsoundbite("sounds/6C7alt.mp3")
+var clicksound92=createsoundbite("sounds/7AbMaj7.mp3")
+
+</script>
+
+
+
+<meta charset="utf-8">
+<title>Colour Piano</title>
+<link href="website_slices/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #7F7F7F;
+}
+a:visited {
+	text-decoration: none;
+	color: #4B4B4B;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+	
+#buttonsdiv {
+}
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+</head>
+
+
+
+
+<body onLoad="MM_preloadImages('buttons/b_on_01.png',
+								'buttons/b_on_02.png',
+								'buttons/b_on_03.png',
+								'buttons/b_on_04.png',
+								'buttons/b_on_05.png',
+								'buttons/b_on_06.png',
+								'buttons/b_on_07.png',
+								'buttons/b_on_08.png',
+								'buttons/b_on_09.png',
+								'buttons/b_on_10.png',
+								'buttons/b_on_11.png',
+								'buttons/b_on_12.png')">
+<div id="wrapper">
+  
+  
+  
+  <main>
+    <h3 class="header"> <h2 onclick="clicksound85.playclip()">
+    
+    
+<span class="title1">C</span><span class="title2">o</span><span class="title3">l</span><span class="title4">o</span><span class="title5">u</span><span class="title6">r</span>
+    
+<span class="title7">P</span><span class="title8">i</span><span class="title9">a</span><span class="title10">n</span><span class="title11">o</span> 
+     
+     <span class="title12">f</span><span class="title1">o</span><span class="title2">r</span> 
+     
+     <span class="title3">C</span><span class="title4">h</span><span class="title5">r</span><span class="title6">o</span><span class="title7">m</span><span class="title8">a</span><span class="title9">t</span><span class="title9">i</span><span class="title10">c</span> 
+          
+<span class="title11">P</span><span class="title12">o</span><span class="title1">r</span><span class="title2">t</span><span class="title3">r</span><span class="title4">a</span><span class="title5">i</span><span class="title6">t</span><span class="title7">s</span>
+     
+     
+     </h2> <h2 align="right"> <a href="about.html" class="valenza">Danae Valenza</a></h2>
+    
+      
+    </h3>
+    
+    <aside class="playlist">
+      Jazz Chords<br>(Digital Colour Piano)
+      <br>
+	  
+	  <br><a href="#" input type="image" onkeypress="clicksound86.playclip()" onclick="clicksound86.playclip()" onmousedown="MM_swapImage('button66','','buttons/b_on_06.png','button57','','buttons/b_on_09.png','button37','','buttons/b_on_01.png','button40','','buttons/b_on_04.png','button44','','buttons/b_on_08.png',1)" onMouseUp="MM_swapImgRestore()">• F-9</a>
+	  <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound87.playclip()" onclick="clicksound87.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button71','','buttons/b_on_11.png','button57','','buttons/b_on_09.png','button37','','buttons/b_on_01.png','button39','','buttons/b_on_03.png','button44','','buttons/b_on_08.png',1)">• Bb13</a>
+	  <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound88.playclip()" onclick="clicksound88.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button64','','buttons/b_on_04.png','button55','','buttons/b_on_07.png','button59','','buttons/b_on_11.png','button38','','buttons/b_on_02.png','button42','','buttons/b_on_06.png',1)">• Eb-9</a>
+	  <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound89.playclip()" onclick="clicksound89.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button69','','buttons/b_on_09.png','button55','','buttons/b_on_07.png','button60','','buttons/b_on_12.png','button39','','buttons/b_on_03.png','button42','','buttons/b_on_06.png',1)">• Abdim</a>
+      <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound90.playclip()" onclick="clicksound90.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button37','','buttons/b_on_01.png','button40','','buttons/b_on_04.png','button55','','buttons/b_on_07.png','button62','','buttons/b_on_02.png','button45','','buttons/b_on_09.png',1)">• DbMaj9</a>
+      <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound91.playclip()" onclick="clicksound91.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button61','','buttons/b_on_01.png','button53','','buttons/b_on_05.png','button59','','buttons/b_on_11.png','button40','','buttons/b_on_04.png',1)">• C7alt</a>
+      <br>
+	  <br><a href="#" input type="image" onkeypress="clicksound92.playclip()" onclick="clicksound92.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button69','','buttons/b_on_09.png','button52','','buttons/b_on_04.png','button56','','buttons/b_on_08.png','button38','','buttons/b_on_01.png',1)">• AbMaj7</a>
+      <br>
+    </aside>
+    
+    <div id="buttonsdiv">
+    
+      <aside class="Buttons">
+<div>
+	<a href="#" input type="image" onkeypress="clicksound1.playclip()" onclick="clicksound1.playclip()" onmouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button1','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button1"></a> 
+	<a href="#" input type="image" onkeypress="clicksound2.playclip()" onclick="clicksound2.playclip()" onmouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button2','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button2"></a> 
+	<a href="#" input type="image" onkeypress="clicksound3.playclip()" onclick="clicksound3.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button3','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button3"></a> 
+	<a href="#" input type="image" onkeypress="clicksound4.playclip()" onclick="clicksound4.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button4','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button4"></a> 
+	<a href="#" input type="image" onkeypress="clicksound5.playclip()" onclick="clicksound5.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button5','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button5"></a> 
+	<a href="#" input type="image" onkeypress="clicksound6.playclip()" onclick="clicksound6.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button6','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button6"></a>
+	<a href="#" input type="image" onkeypress="clicksound7.playclip()" onclick="clicksound7.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button7','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button7"></a> 
+	<a href="#" input type="image" onkeypress="clicksound8.playclip()" onclick="clicksound8.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button8','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button8"></a> 
+	<a href="#" input type="image" onkeypress="clicksound9.playclip()" onclick="clicksound9.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button9','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button9"></a> 
+	<a href="#" input type="image" onkeypress="clicksound10.playclip()" onclick="clicksound10.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button10','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button10"></a> 
+	<a href="#" input type="image" onkeypress="clicksound11.playclip()" onclick="clicksound11.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button11','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button11"></a> 
+	<a href="#" input type="image" onkeypress="clicksound12.playclip()" onclick="clicksound12.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button12','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button12"></a> </div>
+  
+<div>
+  <a href="#" input type="image" onkeypress="clicksound13.playclip()" onclick="clicksound13.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button13','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button13"></a>
+  <a href="#" input type="image" onkeypress="clicksound14.playclip()" onclick="clicksound14.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button14','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button14"></a> 
+  <a href="#" input type="image" onkeypress="clicksound15.playclip()" onclick="clicksound15.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button15','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button15"></a> 
+  <a href="#" input type="image" onkeypress="clicksound16.playclip()" onclick="clicksound16.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button16','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button16"></a> 
+  <a href="#" input type="image" onkeypress="clicksound17.playclip()" onclick="clicksound17.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button17','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button17"></a> 
+  <a href="#" input type="image" onkeypress="clicksound18.playclip()" onclick="clicksound18.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button18','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button18"></a> 
+  <a href="#" input type="image" onkeypress="clicksound19.playclip()" onclick="clicksound19.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button19','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button19"></a> 
+  <a href="#" input type="image" onkeypress="clicksound20.playclip()" onclick="clicksound20.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button20','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button20"></a> 
+  <a href="#" input type="image" onkeypress="clicksound21.playclip()" onclick="clicksound21.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button21','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button21"></a> 
+  <a href="#" input type="image" onkeypress="clicksound22.playclip()" onclick="clicksound22.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button22','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button22"></a> 
+  <a href="#" input type="image" onkeypress="clicksound23.playclip()" onclick="clicksound23.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button23','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button23"></a> 
+  <a href="#" input type="image" onkeypress="clicksound24.playclip()" onclick="clicksound24.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button24','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button24"></a> 
+</div>
+  
+<div>
+		<a href="#" input type="image" onkeypress="clicksound25.playclip()" onclick="clicksound25.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button25','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button25"></a> 
+        <a href="#" input type="image" onkeypress="clicksound26.playclip()" onclick="clicksound26.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button26','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button26"></a> 
+        <a href="#" input type="image" onkeypress="clicksound27.playclip()" onclick="clicksound27.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button27','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button27"></a> 
+        <a href="#" input type="image" onkeypress="clicksound28.playclip()" onclick="clicksound28.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button28','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button28"></a> 
+        <a href="#" input type="image" onkeypress="clicksound29.playclip()" onclick="clicksound29.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button29','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button29"></a> 
+        <a href="#" input type="image" onkeypress="clicksound30.playclip()" onclick="clicksound30.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button30','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button30"></a> 
+        <a href="#" input type="image" onkeypress="clicksound31.playclip()" onclick="clicksound31.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button31','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button31"></a>
+        <a href="#" input type="image" onkeypress="clicksound32.playclip()" onclick="clicksound32.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button32','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button32"></a> 
+        <a href="#" input type="image" onkeypress="clicksound33.playclip()" onclick="clicksound33.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button33','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button33"></a> 
+        <a href="#" input type="image" onkeypress="clicksound34.playclip()" onclick="clicksound34.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button34','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button34"></a> 
+        <a href="#" input type="image" onkeypress="clicksound35.playclip()" onclick="clicksound35.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button35','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button35"></a> 
+        <a href="#" input type="image" onkeypress="clicksound36.playclip()" onclick="clicksound36.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button36','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button36"></a> 
+</div>
+
+<div>
+        <a href="#" input type="image" onkeypress="clicksound37.playclip()" onclick="clicksound37.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button37','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button37"></a> 
+        <a href="#" input type="image" onkeypress="clicksound38.playclip()" onclick="clicksound38.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button38','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button38"></a> 
+        <a href="#" input type="image" onkeypress="clicksound39.playclip()" onclick="clicksound39.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button39','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button39"></a> 
+        <a href="#" input type="image" onkeypress="clicksound40.playclip()" onclick="clicksound40.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button40','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button40"></a> 
+        <a href="#" input type="image" onkeypress="clicksound41.playclip()" onclick="clicksound41.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button41','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button41"></a> 
+        <a href="#" input type="image" onkeypress="clicksound42.playclip()" onclick="clicksound42.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button42','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button42"></a> 
+        <a href="#" input type="image" onkeypress="clicksound43.playclip()" onclick="clicksound43.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button43','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button43"></a> 
+        <a href="#" input type="image" onkeypress="clicksound44.playclip()" onclick="clicksound44.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button44','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button44"></a> 
+        <a href="#" input type="image" onkeypress="clicksound45.playclip()" onclick="clicksound45.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button45','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button45"></a> 
+        <a href="#" input type="image" onkeypress="clicksound46.playclip()" onclick="clicksound46.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button46','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button46"></a> 
+        <a href="#" input type="image" onkeypress="clicksound47.playclip()" onclick="clicksound47.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button47','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button47"></a> 
+        <a href="#" input type="image" onkeypress="clicksound48.playclip()" onclick="clicksound48.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button48','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button48"></a> 
+ </div>
+
+ <div>
+        <a href="#" input type="image" onkeypress="clicksound49.playclip()" onclick="clicksound49.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button49','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button49"></a>
+        <a href="#" input type="image" onkeypress="clicksound50.playclip()" onclick="clicksound50.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button50','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button50"></a> 
+        <a href="#" input type="image" onkeypress="clicksound51.playclip()" onclick="clicksound51.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button51','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button51"></a> 
+        <a href="#" input type="image" onkeypress="clicksound52.playclip()" onclick="clicksound52.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button52','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button52"></a> 
+        <a href="#" input type="image" onkeypress="clicksound53.playclip()" onclick="clicksound53.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button53','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button53"></a> 
+        <a href="#" input type="image" onkeypress="clicksound54.playclip()" onclick="clicksound54.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button54','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button54"></a> 
+        <a href="#" input type="image" onkeypress="clicksound55.playclip()" onclick="clicksound55.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button55','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button55"></a> 
+        <a href="#" input type="image" onkeypress="clicksound56.playclip()" onclick="clicksound56.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button56','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button56"></a> 
+        <a href="#" input type="image" onkeypress="clicksound57.playclip()" onclick="clicksound57.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button57','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button57"></a> 
+        <a href="#" input type="image" onkeypress="clicksound58.playclip()" onclick="clicksound58.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button58','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button58"></a> 
+        <a href="#" input type="image" onkeypress="clicksound59.playclip()" onclick="clicksound59.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button59','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button59"></a> 
+        <a href="#" input type="image" onkeypress="clicksound60.playclip()" onclick="clicksound60.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button60','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button60"></a> 
+</div>		
+
+ <div>  
+        <a href="#" input type="image" onkeypress="clicksound61.playclip()" onclick="clicksound61.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button61','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button61"></a> 
+        <a href="#" input type="image" onkeypress="clicksound62.playclip()" onclick="clicksound62.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button62','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button62"></a> 
+        <a href="#" input type="image" onkeypress="clicksound63.playclip()" onclick="clicksound63.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button63','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button63"></a> 
+        <a href="#" input type="image" onkeypress="clicksound64.playclip()" onclick="clicksound64.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button64','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button64"></a> 
+        <a href="#" input type="image" onkeypress="clicksound65.playclip()" onclick="clicksound65.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button65','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button65"></a> 
+        <a href="#" input type="image" onkeypress="clicksound66.playclip()" onclick="clicksound66.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button66','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button66"></a> 
+        <a href="#" input type="image" onkeypress="clicksound67.playclip()" onclick="clicksound67.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button67','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button67"></a> 
+        <a href="#" input type="image" onkeypress="clicksound68.playclip()" onclick="clicksound68.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button68','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button68"></a> 
+        <a href="#" input type="image" onkeypress="clicksound69.playclip()" onclick="clicksound69.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button69','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button69"></a> 
+        <a href="#" input type="image" onkeypress="clicksound70.playclip()" onclick="clicksound70.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button70','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button70"></a> 
+        <a href="#" input type="image" onkeypress="clicksound71.playclip()" onclick="clicksound71.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button71','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button71"></a> 
+        <a href="#" input type="image" onkeypress="clicksound72.playclip()" onclick="clicksound72.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button72','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button72"></a> 
+</div>
+		
+<div>		
+        <a href="#" input type="image" onkeypress="clicksound73.playclip()" onclick="clicksound73.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button73','','buttons/b_on_01.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button73"></a> 
+        <a href="#" input type="image" onkeypress="clicksound74.playclip()" onclick="clicksound74.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button74','','buttons/b_on_02.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button74"></a> 
+        <a href="#" input type="image" onkeypress="clicksound75.playclip()" onclick="clicksound75.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button75','','buttons/b_on_03.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button75"></a> 
+        <a href="#" input type="image" onkeypress="clicksound76.playclip()" onclick="clicksound76.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button76','','buttons/b_on_04.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button76"></a> 
+        <a href="#" input type="image" onkeypress="clicksound77.playclip()" onclick="clicksound77.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button77','','buttons/b_on_05.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button77"></a> 
+        <a href="#" input type="image" onkeypress="clicksound78.playclip()" onclick="clicksound78.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button78','','buttons/b_on_06.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button78"></a> 
+        <a href="#" input type="image" onkeypress="clicksound79.playclip()" onclick="clicksound79.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button79','','buttons/b_on_07.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button79"></a> 
+        <a href="#" input type="image" onkeypress="clicksound80.playclip()" onclick="clicksound80.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button80','','buttons/b_on_08.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button80"></a> 
+        <a href="#" input type="image" onkeypress="clicksound81.playclip()" onclick="clicksound81.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button81','','buttons/b_on_09.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button81"></a> 
+        <a href="#" input type="image" onkeypress="clicksound82.playclip()" onclick="clicksound82.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button82','','buttons/b_on_10.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button82"></a> 
+        <a href="#" input type="image" onkeypress="clicksound83.playclip()" onclick="clicksound83.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button83','','buttons/b_on_11.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button83"></a> 
+        <a href="#" input type="image" onkeypress="clicksound84.playclip()" onclick="clicksound84.playclip()" onMouseUp="MM_swapImgRestore()" onMouseDown="MM_swapImage('button84','','buttons/b_on_12.png',1)"><img src="buttons/tbut.png" width="48" height="48" id="button84"></a> 
+</div>        
+        
+        
+        </aside>
+        
+    </div>
+    
+    <p class="details" style="text-align:right;font-size:80%;color:#4B4B4B;">Darren O'Hehir<br>ID: 215110471<br>dohehir@deakin.edu.au<br> <a href="http://www.darrenohehir.com" style="color:#4B4B4B">www.darrenohehir.com</a></p>
+    
+    
+  </main>
+  
+  
+</div>
+
+
+
+
+</body>
+
+</html>

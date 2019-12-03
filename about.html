@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="website_slices/favicon2.ico" type="image/x-icon" />
+
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("2.ogg", "1.mp3")
+
+var clicksound1=createsoundbite("1.wav", "1.mp3")
+var clicksound2=createsoundbite("2.wav", "2.mp3")
+var clicksound3=createsoundbite("3.wav", "3.mp3")
+var clicksound4=createsoundbite("4.wav", "4.mp3")
+var clicksound5=createsoundbite("5.wav", "5.mp3")
+var clicksound6=createsoundbite("6.wav", "6.mp3")
+var clicksound7=createsoundbite("7.wav", "7.mp3")
+var clicksound8=createsoundbite("8.wav", "8.mp3")
+var clicksound9=createsoundbite("9.wav", "9.mp3")
+var clicksound10=createsoundbite("10.wav", "10.mp3")
+var clicksound11=createsoundbite("11.wav", "11.mp3")
+var clicksound12=createsoundbite("12.wav", "12.mp3")
+
+var clicksound13=createsoundbite("13.wav", "13.mp3")
+var clicksound14=createsoundbite("14.wav", "14.mp3")
+var clicksound15=createsoundbite("15.wav", "15.mp3")
+var clicksound16=createsoundbite("16.wav", "16.mp3")
+var clicksound17=createsoundbite("17.wav", "17.mp3")
+var clicksound18=createsoundbite("18.wav", "18.mp3")
+var clicksound19=createsoundbite("19.wav", "19.mp3")
+var clicksound20=createsoundbite("20.wav", "20.mp3")
+var clicksound21=createsoundbite("21.wav", "21.mp3")
+var clicksound22=createsoundbite("22.wav", "22.mp3")
+var clicksound23=createsoundbite("23.wav", "23.mp3")
+var clicksound24=createsoundbite("24.wav", "24.mp3")
+
+var clicksound25=createsoundbite("25.wav", "25.mp3")
+var clicksound26=createsoundbite("26.wav", "26.mp3")
+var clicksound27=createsoundbite("27.wav", "27.mp3")
+var clicksound28=createsoundbite("28.wav", "28.mp3")
+var clicksound29=createsoundbite("29.wav", "29.mp3")
+var clicksound30=createsoundbite("30.wav", "30.mp3")
+var clicksound31=createsoundbite("31.wav", "31.mp3")
+var clicksound32=createsoundbite("32.wav", "32.mp3")
+var clicksound33=createsoundbite("33.wav", "33.mp3")
+var clicksound34=createsoundbite("34.wav", "34.mp3")
+var clicksound35=createsoundbite("35.wav", "35.mp3")
+var clicksound36=createsoundbite("36.wav", "36.mp3")
+
+var clicksound37=createsoundbite("37.wav", "37.mp3")
+var clicksound38=createsoundbite("38.wav", "38.mp3")
+var clicksound39=createsoundbite("39.wav", "39.mp3")
+var clicksound40=createsoundbite("40.wav", "40.mp3")
+var clicksound41=createsoundbite("41.wav", "41.mp3")
+var clicksound42=createsoundbite("42.wav", "42.mp3")
+var clicksound43=createsoundbite("43.wav", "43.mp3")
+var clicksound44=createsoundbite("44.wav", "44.mp3")
+var clicksound45=createsoundbite("45.wav", "45.mp3")
+var clicksound46=createsoundbite("46.wav", "46.mp3")
+var clicksound47=createsoundbite("47.wav", "47.mp3")
+var clicksound48=createsoundbite("48.wav", "48.mp3")
+
+var clicksound49=createsoundbite("49.wav", "49.mp3")
+var clicksound50=createsoundbite("50.wav", "50.mp3")
+var clicksound51=createsoundbite("51.wav", "51.mp3")
+var clicksound52=createsoundbite("52.wav", "52.mp3")
+var clicksound53=createsoundbite("53.wav", "53.mp3")
+var clicksound54=createsoundbite("54.wav", "54.mp3")
+var clicksound55=createsoundbite("55.wav", "55.mp3")
+var clicksound56=createsoundbite("56.wav", "56.mp3")
+var clicksound57=createsoundbite("57.wav", "57.mp3")
+var clicksound58=createsoundbite("58.wav", "58.mp3")
+var clicksound59=createsoundbite("59.wav", "59.mp3")
+var clicksound60=createsoundbite("60.wav", "60.mp3")
+
+var clicksound61=createsoundbite("61.wav", "61.mp3")
+var clicksound62=createsoundbite("62.wav", "62.mp3")
+var clicksound63=createsoundbite("63.wav", "63.mp3")
+var clicksound64=createsoundbite("64.wav", "64.mp3")
+var clicksound65=createsoundbite("65.wav", "65.mp3")
+var clicksound66=createsoundbite("66.wav", "66.mp3")
+var clicksound67=createsoundbite("67.wav", "67.mp3")
+var clicksound68=createsoundbite("68.wav", "68.mp3")
+var clicksound69=createsoundbite("69.wav", "69.mp3")
+var clicksound70=createsoundbite("70.wav", "70.mp3")
+var clicksound71=createsoundbite("71.wav", "71.mp3")
+var clicksound72=createsoundbite("72.wav", "72.mp3")
+
+var clicksound73=createsoundbite("73.wav", "73.mp3")
+var clicksound74=createsoundbite("74.wav", "74.mp3")
+var clicksound75=createsoundbite("75.wav", "75.mp3")
+var clicksound76=createsoundbite("76.wav", "76.mp3")
+var clicksound77=createsoundbite("77.wav", "77.mp3")
+var clicksound78=createsoundbite("78.wav", "78.mp3")
+var clicksound79=createsoundbite("79.wav", "79.mp3")
+var clicksound80=createsoundbite("80.wav", "80.mp3")
+var clicksound81=createsoundbite("81.wav", "81.mp3")
+var clicksound82=createsoundbite("82.wav", "82.mp3")
+var clicksound83=createsoundbite("83.wav", "83.mp3")
+var clicksound84=createsoundbite("84.wav", "84.mp3")
+
+var clicksound85=createsoundbite("sounds/pianosfx.mp3")
+
+var clicksound86=createsoundbite("sounds/1fm9.mp3")
+var clicksound87=createsoundbite("sounds/2Bb13.mp3")
+var clicksound88=createsoundbite("sounds/3Ebm9.mp3")
+var clicksound89=createsoundbite("sounds/4Abdim.mp3")
+var clicksound90=createsoundbite("sounds/5DbMaj9.mp3")
+var clicksound91=createsoundbite("sounds/6C7alt.mp3")
+var clicksound93=createsoundbite("sounds/evansearly.mp3")
+
+</script>
+
+
+<meta charset="utf-8">
+<title>Colour Piano</title>
+<link href="website_slices/about.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+a:link {
+	color: #7F7F7F;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #4B4B4B;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+button.accordion {
+    background-color: #170801;
+    color: #a0a0a0;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #5c0013;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #170801;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+<link href="audiobutt.css" rel="stylesheet" type="text/css">
+</head>
+
+<div id="wrapper">
+<body onLoad="MM_preloadImages('website_slices/images/buttons_on/buttons_on_01.png','website_slices/images/buttons_on/buttons_on_02.png')">
+
+
+
+
+
+
+<main>
+  <header class="header"> <h2 onclick="clicksound85.playclip()">
+  
+  <span class="title1">C</span><span class="title2">o</span><span class="title3">l</span><span class="title4">o</span><span class="title5">u</span><span class="title6">r</span>
+    
+<span class="title7">P</span><span class="title8">i</span><span class="title9">a</span><span class="title10">n</span><span class="title11">o</span> 
+     
+     <span class="title12">f</span><span class="title1">o</span><span class="title2">r</span> 
+     
+     <span class="title3">C</span><span class="title4">h</span><span class="title5">r</span><span class="title6">o</span><span class="title7">m</span><span class="title8">a</span><span class="title9">t</span><span class="title9">i</span><span class="title10">c</span> 
+          
+<span class="title11">P</span><span class="title12">o</span><span class="title1">r</span><span class="title2">t</span><span class="title3">r</span><span class="title4">a</span><span class="title5">i</span><span class="title6">t</span><span class="title7">s</span>
+  
+  
+  </h2> <h2 align="right"> <a href="index.html" class="goback">Go Back</a></h2>
+  
+  </header>
+  
+  <aside class="playlist">
+  <br>
+  <p style="font-size:20px"><strong>Playlist</strong></p>
+  <p><b>Bill Evans</b> </p>
+    
+    <p>• Very Early</p>
+  
+  		<audio id="evansearly" src="sounds/evansearly.mp3"></audio>
+    		<div>
+		  		<button class="earlyplay" onclick="document.getElementById('evansearly').play()">►</button>
+		  		<button class="earlypause" onclick="document.getElementById('evansearly').pause()">▮▮</button>
+				<button class="earlyup" onclick="document.getElementById('evansearly').volume+=0.1"><strong>+</strong></button>
+				<button class="earlydown" onclick="document.getElementById('evansearly').volume-=0.1"><strong>-</strong></button>
+			</div>
+        
+    <br>
+    
+    <p>• Alice in Wonderland</p>
+    
+    <audio id="evansalice" src="sounds/evansalice.mp3"></audio>
+		<div>
+			<button class="aliceplay" onclick="document.getElementById('evansalice').play()">►</button>
+			<button class="alicepause" onclick="document.getElementById('evansalice').pause()">▮▮</button>
+			<button class="aliceup" onclick="document.getElementById('evansalice').volume+=0.1"><strong >+</strong></button>
+			<button class="alicedown" onclick="document.getElementById('evansalice').volume-=0.1"><strong>-</strong></button>
+		</div>
+        
+    <br>
+    <p>• I Loves You, Porgy</p>
+    
+    <audio id="evansporgy" src="sounds/evansporgy.mp3"></audio>
+		<div>
+			<button class="porgyplay" onclick="document.getElementById('evansporgy').play()">►</button>
+			<button class="porgypause" onclick="document.getElementById('evansporgy').pause()">▮▮</button>
+			<button class="porgyup" onclick="document.getElementById('evansporgy').volume+=0.1"><strong >+</strong></button>
+			<button class="porgydown" onclick="document.getElementById('evansporgy').volume-=0.1"><b>-</b></button>
+		</div>
+<br>
+<br><a href="about.html" class="stopmusic" ><b>Stop Music</b></a>
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+</script> 
+  
+  		<aside class="Buttons">
+        <h2>About</h2>
+<h3>Danae Valenza Interview</h3>
+<p>"My work for NEW is Colour Piano for Chromatic Portraits, so it's basically a baby grand piano that's been modified and I've worked with a team of people, technicians, piano technicians, electricians, musicians, to make this sculpture that can be activated at any time."</p>
+
+<p>"A lot of the work that I do involves making music, or the act of creating music, visual in some way. Wanting to capture a song in a portrait I think that was where it started from. And then realising that to capture a song in a moment, in a photographic portrait, I would need to create an instrument that would enable to do that."</p>
+
+<p>"Each key on the piano has been rigged up to a different coloured light that's been hand painted and from there we're using the instrument to make chromatic portraits. So using long exposure analogue photography we can then take portraits of songs"</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HR--nAqfWPE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<br>
+<h3>Web Design And Interactivity Assignment</h3>
+<p>Danae Valenza’s work that was seen in ACCA’s NEW14 Exhibition in 2014 is an interactive technological modification of an anologue musical instrument which creates an audio to musical visualisation. Although Valenza uses this modified instrument as a necessary tool to create long exposure photographs of the lights each song creates, I see the ‘Colour Piano’ as a powerful and inspiring artwork by itself.</p>
+
+<p>As part of my second assignment for ACG206 - Web Design and Interactivity, I have chosen this installation artwork for me to reinterpret into a digital form of a website. The website will use two webpages (Home and About) and I will use the knowledge of html I have learnt this semester to build these pages. People often use the internet to listen to songs and with this website, musicians and contemporary piano enthusiasts can enjoy using an interactive 'digital piano' based on Valenza's work while listening to classic solo jazz piano pieces.</p>
+<br>
+
+<h3>Acknowledgements</h3>
+
+<button class="accordion">Danae Valenza</button>
+<div class="panel">
+  <p>Thanks to Danae Valenza's colour piano which I had the pleasure of playing at ACCA in 2014 during the exhibition, whose work inspired me to create this website. <a href="http://www.danaevalenza.com/">You can visit Valenza's website here.</a>
+  
+  </p>
+</div>
+
+<button class="accordion">Bob Moog Google Logo</button>
+<div class="panel"><p>May 23, 2012 was the date of Bob Moog's 78th birthday and Google celebrated him and the Moog Synthesizer by creating an interactive logo that worked like a keyboard instrument and could be played with the computer keyboard. I remembered playing with this in 2012 and served as inspiration for this website.<a href="http://www.google.com/doodles/robert-moogs-78th-birthday">You can find the Google logo here.</a></p>
+</div>
+
+<button class="accordion">Maria Bates</button>
+<div class="panel">
+  <p>Thanks to Maria Bates, ACG206 - Web Design And Interactivity</p>
+  </div>
+  <button class="accordion">Online Tutorials and Tools</button>
+<div id="foo" class="panel">
+  <p>Thanks to JavaScript Kit for providing the <a href="http://www.javascriptkit.com/script/script2/soundlink.shtml">HTML5 audio script,</a>
+  
+  <br>w3schools for <a href="http://www.w3schools.com/howto/howto_js_accordion.asp">tutorials on accordions</a> and <a href="http://www.w3schools.com/css/css3_buttons.asp">tutorials on CSS Buttons</a>
+  <br>
+  and finally this CSS button tool I used to create the playlist audio controls: <a href="http://www.bestcssbuttongenerator.com/">Best CSS Button Generator</a>
+  
+  </p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+
+
+<br>
+<br>
+<p style="text-align:right;color:#4B4B4B">Darren O'Hehir<br>ID: 215110471<br>dohehir@deakin.edu.au<br><a href="http://www.darrenohehir.com">www.darrenohehir.com</a></p>
+<br>
+
+
+        </aside>
+  
+</main>
+
+
+</body>
+</div>
+</html>
